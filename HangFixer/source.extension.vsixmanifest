@@ -4,6 +4,8 @@
     <Identity Id="MobileEssentials.HangFixer" Version="1.0" Language="en-US" Publisher="Mobile Essentials" />
     <DisplayName>Visual Studio Hang Fixer</DisplayName>
     <Description xml:space="preserve">Fixes hangs that happen when opening a solution with a corrupt or invalid .vs directory or .suo file.</Description>
+    <MoreInfo>https://github.com/MobileEssentials/HangFixer</MoreInfo>
+    <License>LICENSE.txt</License>
     <Icon>Resources\Package.ico</Icon>
   </Metadata>
   <Installation>

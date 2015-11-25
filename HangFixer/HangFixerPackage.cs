@@ -26,7 +26,6 @@ namespace MobileEssentials
 
 			var solution = (IVsSolution2)GetService(typeof(SVsSolution));
 			ErrorHandler.ThrowOnFailure (solution.AdviseSolutionEvents (this, out cookie));
-
 		}
 
 		// Order of callbacks is:
