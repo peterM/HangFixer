@@ -13,6 +13,6 @@ This extension does that automatically for you by:
 2. Deleting it after a successfull solution load.
 
 
-If the solution didn't load successfully, you will likely kill the process and try again. At thit point, step 2. above wouldn't have run, and the flag file will be present. We consider this the signal that something failed on the previous load, and procceed to delete the .vs directory and .suo files we find, before letting Visual Studio proceed with the solution load.
+If the solution didn't load successfully, you will likely kill the process and try again. At this point, step 2 above wouldn't have run, and the flag file will be present. We consider this the signal that something failed on the previous load, and procceed to delete the .vs directory and .suo files we find, before letting Visual Studio proceed with the solution load.
 
 The logic is [pretty straightforward](https://github.com/MobileEssentials/HangFixer/blob/master/HangFixer/HangFixerPackage.cs#L35) and effective.
