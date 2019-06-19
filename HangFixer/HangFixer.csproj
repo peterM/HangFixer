@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<RootNamespace>MobileEssentials</RootNamespace>
 		<AssemblyName>MobileEssentials.HangFixer</AssemblyName>
-		<TargetFramework>net46</TargetFramework>
+		<TargetFramework>net472</TargetFramework>
 		<TargetVsixContainerName>MobileEssentials.HangFixer.vsix</TargetVsixContainerName>
 		<SignAssembly>true</SignAssembly>
 		<AssemblyOriginatorKeyFile>HangFixer.snk</AssemblyOriginatorKeyFile>
@@ -29,7 +29,12 @@
 		</Content>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.VSSDK.BuildTools" Version="15.0.26201" />
-		<PackageReference Include="Xamarin.VsSDK.BuildTools" Version="0.2.1-pre-build0021" />
+		<PackageReference Include="Microsoft.VisualStudio.Shell.15.0" Version="16.1.28917.181" />
+		<PackageReference Include="Microsoft.VisualStudio.Shell.Interop" Version="7.10.6072" />
+		<PackageReference Include="Microsoft.VSSDK.BuildTools" Version="16.1.3128">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Xamarin.VsSDK.BuildTools" Version="0.3.0-alpha.17" />
 	</ItemGroup>
 </Project>
